@@ -1,0 +1,84 @@
+{
+    "books": [
+      {
+        "id": 1,
+        "title": "Bring Your Human to Work",
+        "author": "Erica Keswin",
+        "category": "Entrepreneurship",
+        "image": "./images/1.png",
+        "status": "finished"
+      },
+      {
+        "id": 2,
+        "title": "Employee to Entrepreneur",
+        "author": "Steve Glaveski",
+        "category": "Entrepreneurship",
+        "image": "./images/11.png",
+        "status": "current"
+      },
+      {
+        "id": 3,
+        "title": "Doesn’t Hurt to Ask",
+        "author": "Trey Gowdy",
+        "category": "Politics",
+        "image": "./images/3.png",
+        "status": "current"
+      },
+      {
+        "id": 4,
+        "title": "The Fate of Food",
+        "author": "Amanda Little",
+        "category": "Science",
+        "image": "./images/4.png",
+        "status": "explore"
+      },
+      {
+        "id": 5,
+        "title": "Lives of the Stoics",
+        "author": "Ryan Holiday, Stephen Hansel",
+        "category": "Science",
+        "image": "./images/5.png",
+        "status": "explore"
+      },
+      {
+        "id": 6,
+        "title": "Loving Your Business",
+        "author": "Debbie King",
+        "category": "Health",
+        "image": "./images/6.png",
+        "status": "explore"
+      },
+      {
+        "id": 7,
+        "title": "The Lonely Century",
+        "author": "Noreena Hertz",
+        "category": "Health",
+        "image": "./images/7.png",
+        "status": "explore"
+      },
+      {
+        "id": 8,
+        "title": "Eat Better, Feel Better",
+        "author": "Giada De Laurentiis",
+        "category": "Education",
+        "image": "./images/8.png",
+        "status": "current"
+      },
+      {
+        "id": 9,
+        "title": "Dropshipping",
+        "author": "James Moore",
+        "category": "Education",
+        "image": "./images/9.png",
+        "status": "current"
+      },
+      {
+        "id": 10,
+        "title": "Being Boss",
+        "author": "Kathleen Shannon",
+        "category": "Education",
+        "image": "./images/10.png",
+        "status": "current"
+      }
+    ]
+  }
