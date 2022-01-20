@@ -1,6 +1,6 @@
-import Tabs from './Tab';
+import Tabs from './CustomTabs';
 import { ComponentStory } from "@storybook/react";
-import CustomThemeProvider from "../../../ThemeProvider";
+import CustomThemeProvider from "../../../CustomThemeProvider";
 
 
   

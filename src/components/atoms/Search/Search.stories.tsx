@@ -1,4 +1,4 @@
-import CustomSearch from './Search';
+import CustomSearch from './CustomSearch';
 
 import { ComponentStory } from '@storybook/react';
 export default {

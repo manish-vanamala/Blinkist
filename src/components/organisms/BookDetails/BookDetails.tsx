@@ -3,7 +3,7 @@ import { makeStyles } from "@mui/styles";
 import Typographys from "../../atoms/typography/Typographys";
 import TimeIcon from "@mui/icons-material/AccessTime";
 import image from "./2.png";
-import CustomButton from "../../atoms/Button/Button";
+import CustomButton from "../../atoms/Button/CustomButton";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { Tab, Tabs } from "@mui/material";
 import {useNavigate} from 'react-router-dom';

@@ -7,7 +7,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import { LinearProgress } from "@mui/material";
 import Typographys from "../../atoms/typography/Typographys";
-import CustomButton from "../../atoms/Button/Button";
+import CustomButton from "../../atoms/Button/CustomButton";
 import TimeIcon from "@mui/icons-material/AccessTime";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";

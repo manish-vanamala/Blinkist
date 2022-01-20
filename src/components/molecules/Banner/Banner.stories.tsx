@@ -1,6 +1,6 @@
 import Banner from './Banner';
 import { ComponentStory } from "@storybook/react";
-import CustomThemeProvider from "../../../ThemeProvider";
+import CustomThemeProvider from "../../../CustomThemeProvider";
 
 export default {
   title: "molecules/Banner",

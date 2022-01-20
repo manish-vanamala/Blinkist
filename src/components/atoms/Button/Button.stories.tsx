@@ -1,7 +1,7 @@
-import CustomButton from "./Button";
+import CustomButton from "./CustomButton";
 import AddIcon from '@mui/icons-material/Add'
 import { ComponentStory } from '@storybook/react';
-import CustomThemeProvider from "../../../ThemeProvider";
+import CustomThemeProvider from "../../../CustomThemeProvider";
 export default {
     title:"atoms/Button",
     component:CustomButton,

@@ -1,6 +1,6 @@
 import Footer from './Footer';
 import { ComponentStory } from "@storybook/react";
-import CustomThemeProvider from "../../../ThemeProvider";
+import CustomThemeProvider from "../../../CustomThemeProvider";
 
 
 import { BrowserRouter as Router} from "react-router-dom";

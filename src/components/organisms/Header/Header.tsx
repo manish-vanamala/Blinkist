@@ -8,9 +8,9 @@ import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
-import CustomButton from "../../atoms/Button/Button";
+import CustomButton from "../../atoms/Button/CustomButton";
 import Explore from "../Explore/Explore";
-import CustomSearch from "../../atoms/Search/Search";
+import CustomSearch from "../../atoms/Search/CustomSearch";
 import { useNavigate } from "react-router-dom";
 
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";

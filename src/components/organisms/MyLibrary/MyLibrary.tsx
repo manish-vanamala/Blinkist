@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Box } from "@mui/material";
 import Typography from "../../atoms/typography/Typographys";
-import Tab from "../Tab/Tab";
+import Tab from "../Tab/CustomTabs";
 import Card from "../../molecules/Card/Card";
 import CircularProgress from "@mui/material/CircularProgress";
 import { makeStyles } from "@mui/styles";

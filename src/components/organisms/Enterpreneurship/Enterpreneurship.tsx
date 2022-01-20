@@ -3,7 +3,7 @@ import { Container, Box } from "@mui/material";
 import Card from "../../molecules/Card/Card";
 import CircularProgress from "@mui/material/CircularProgress";
 import Input from "@mui/material/Input";
-import CustomSearch from "../../atoms/Search/Search";
+import CustomSearch from "../../atoms/Search/CustomSearch";
 import './Enterpreneurship.css';
 import { makeStyles } from "@mui/styles";
 import { useNavigate } from "react-router-dom";
