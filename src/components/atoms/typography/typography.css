@@ -1,5 +1,5 @@
 .h1 {
-  font-family: Cera Pro;
+  font-family: Cera Pro,Helvetica, Arial, Verdana, Tahoma;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -8,7 +8,7 @@
   display: block;
 }
 .subtitle2 {
-  font-family: Cera Pro;
+  font-family: Cera Pro,Helvetica, Arial, Verdana, Tahoma;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -17,7 +17,7 @@
   display: block;
 }
 .subtitle1 {
-  font-family: Cera Pro;
+  font-family: Cera Pro,Helvetica, Arial, Verdana, Tahoma;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -26,7 +26,7 @@
   display: block;
 }
 .subtitle3 {
-  font-family: Cera Pro;
+  font-family: Cera Pro,Helvetica, Arial, Verdana, Tahoma;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -35,7 +35,7 @@
   display: block;
 }
 .body1 {
-  font-family: Cera Pro;
+  font-family: Cera Pro,Helvetica, Arial, Verdana, Tahoma;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -45,7 +45,7 @@
   margin-top:14px;
 }
 .body2 {
-  font-family: Cera Pro;
+  font-family: Cera Pro,Helvetica, Arial, Verdana, Tahoma;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -54,7 +54,7 @@
   display: block;
 }
 .body3 {
-  font-family: Cera Pro;
+  font-family: Cera Pro,Helvetica, Arial, Verdana, Tahoma;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
@@ -64,7 +64,7 @@
   display: block;
 }
 .caption1 {
-  font-family: Cera Pro;
+  font-family: Cera Pro,Helvetica, Arial, Verdana, Tahoma;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -73,7 +73,7 @@
   display: block;
 }
 .caption2 {
-  font-family: Cera Pro;
+  font-family: Cera Pro,Helvetica, Arial, Verdana, Tahoma;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -82,7 +82,7 @@
   display: block;
 }
 .caption3 {
-  font-family: Cera Pro;
+  font-family: Cera Pro,Helvetica, Arial, Verdana, Tahoma;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
