@@ -90,3 +90,8 @@
   color: #6d787e;
   display: block;
 }
+
+
+.body2:hover{
+  color:blue;
+};

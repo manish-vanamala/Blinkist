@@ -10,6 +10,13 @@ const theme = createTheme({
     },
   },
   components: {
+    MuiAvatar: {
+      styleOverrides: {
+        colorDefault: {
+          backgroundColor: "#69A6E3",
+        },
+      },
+    },
     MuiButton: {
       styleOverrides: {
         root: {
@@ -17,6 +24,7 @@ const theme = createTheme({
           border: "1px solid #E1ECFC",
           boxSizing: "border-box",
           borderRadius: "0px 0px 8px 8px",
+          textTransform:"none",
           "&:hover": {
             color: "#ffffff",
             backgroundColor: "#0365F2",
@@ -25,7 +33,18 @@ const theme = createTheme({
             },
           },
         },
+        endIcon:{
+          display:"inline",
+        }
       },
+    },
+    MuiAppBar:{
+      styleOverrides:{
+        root:{
+          boxShadow:"none",
+          backgroundColor:"white",
+        }
+      }
     },
     MuiCardActions: {
       styleOverrides: {
@@ -49,6 +68,7 @@ const theme = createTheme({
         },
       },
     },
+    
   },
 });
 

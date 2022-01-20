@@ -1,21 +1,27 @@
 import CustomButton from "./Button";
 import AddIcon from '@mui/icons-material/Add'
 import { ComponentStory } from '@storybook/react';
-
-import theme from '../../../Theme';
-import { ThemeProvider } from '@mui/material/styles';
+import CustomThemeProvider from "../../../ThemeProvider";
 export default {
     title:"atoms/Button",
     component:CustomButton,
 }
 const template:ComponentStory<typeof CustomButton>  = (args) => (
-    <ThemeProvider theme={theme}><CustomButton 
-    startIcon={<AddIcon/>} {...args}/></ThemeProvider>
-
+    <CustomThemeProvider>
+    <CustomButton 
+     {...args}/>
+    </CustomThemeProvider>
 );
 
 export const Secondary = template.bind({});
 Secondary.args={
     color:"secondary",
+    startIcon:<AddIcon/>,
     children:"add to Library",
+}
+
+export const connect = template.bind({});
+connect.args={
+    color:"primary",
+    children:"connect",
 }

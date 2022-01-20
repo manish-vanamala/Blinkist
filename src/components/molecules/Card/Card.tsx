@@ -13,22 +13,22 @@ import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import AddIcon from "@mui/icons-material/Add";
 
-type CardItemsProps = {
+
+export type CardItemsProps = {
   image: string;
   title: string;
   author: string;
-  Typo_variant?: "text" | "outlined" | "contained" | undefined;
-  content: string;
-  onClick?: React.MouseEventHandler<HTMLButtonElement>;
   role: string;
+  value:number;
+  onClick?:React.MouseEventHandler<HTMLDivElement>;
 };
 const CardItems = (props: CardItemsProps) => {
+  
   const useStyles = makeStyles({
     root: {
       maxWidth: 284,
-
+      margin:"40px",
       boxShadow: "none",
-      paddingRight: "0px",
     },
 
     icon: {
@@ -39,8 +39,7 @@ const CardItems = (props: CardItemsProps) => {
     frame: {
       display: "flex",
       alignItems: "center",
-      justifyContent: "space-between",
-      marginTop: "20px",
+     marginTop:"20px"
     },
     MoreHoriz: {
       position: "relative",
@@ -49,11 +48,11 @@ const CardItems = (props: CardItemsProps) => {
   });
   const classes = useStyles();
   return (
-    <Card className={classes.root}>
+    <Card className={classes.root} onClick={props.onClick}>
       <CardActionArea>
         <CardMedia
           component="img"
-          image={props.image}
+          image={process.env.PUBLIC_URL + props.image}
           width={284}
           height={285}
         />
@@ -62,10 +61,10 @@ const CardItems = (props: CardItemsProps) => {
           <Typographys variant="body1" content={props.author} />
 
           <div className={classes.frame}>
-            <TimeIcon fontSize="small" />
+            <TimeIcon fontSize="small" sx={{margin:"5px"}} />
             <Typographys variant="caption3" content="13-minutes read" />
 
-            <PersonOutlineIcon fontSize="small" />
+            <PersonOutlineIcon fontSize="small" sx={{margin:"5px"}}/>
             <Typographys variant="caption3" content="1.9k reads" />
           </div>
         </CardContent>
@@ -74,13 +73,12 @@ const CardItems = (props: CardItemsProps) => {
         <CardActions>
           <CustomButton
             size="large"
-            variant={props.Typo_variant}
+            variant="text"
             color="secondary"
             startIcon={<AddIcon />}
-            onClick={props.onClick}
             fullWidth={true}
           >
-            {props.content}
+            Add to Library
           </CustomButton>
         </CardActions>
       )}
@@ -89,13 +87,15 @@ const CardItems = (props: CardItemsProps) => {
           <MoreHorizIcon fontSize="small" className={classes.MoreHoriz} />
           <div>
             <LinearProgress
-              value={30}
+              value={props.value}
               sx={{
                 marginTop: "35px",
                 height: "15px",
                 overflow: "unset",
                 borderRadius: "0px 0px 8px 8px",
-                width: "263px",
+                width: "244px",
+                position:"relative",
+                left:"20px",
                 backgroundColor: "#F1F6F4",
               }}
               variant="determinate"
@@ -107,14 +107,12 @@ const CardItems = (props: CardItemsProps) => {
         <CardActions>
           <CustomButton
             size="large"
-            variant={props.Typo_variant}
+            variant="text"
             color="secondary"
-            onClick={props.onClick}
             fullWidth={true}
           >
-            {props.content}
+            Finished
           </CustomButton>
-          
         </CardActions>
       )}
     </Card>

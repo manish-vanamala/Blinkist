@@ -1,4 +1,3 @@
-import React from 'react';
 import CustomSearch from './Search';
 
 import { ComponentStory } from '@storybook/react';

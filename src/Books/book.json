@@ -1,84 +1,161 @@
 {
-    "books": [
-      {
-        "id": 1,
-        "title": "Bring Your Human to Work",
-        "author": "Erica Keswin",
-        "category": "Entrepreneurship",
-        "image": "./images/1.png",
-        "status": "finished"
-      },
-      {
-        "id": 2,
-        "title": "Employee to Entrepreneur",
-        "author": "Steve Glaveski",
-        "category": "Entrepreneurship",
-        "image": "./images/11.png",
-        "status": "current"
-      },
-      {
-        "id": 3,
-        "title": "Doesn’t Hurt to Ask",
-        "author": "Trey Gowdy",
-        "category": "Politics",
-        "image": "./images/3.png",
-        "status": "current"
-      },
-      {
-        "id": 4,
-        "title": "The Fate of Food",
-        "author": "Amanda Little",
-        "category": "Science",
-        "image": "./images/4.png",
-        "status": "explore"
-      },
-      {
-        "id": 5,
-        "title": "Lives of the Stoics",
-        "author": "Ryan Holiday, Stephen Hansel",
-        "category": "Science",
-        "image": "./images/5.png",
-        "status": "explore"
-      },
-      {
-        "id": 6,
-        "title": "Loving Your Business",
-        "author": "Debbie King",
-        "category": "Health",
-        "image": "./images/6.png",
-        "status": "explore"
-      },
-      {
-        "id": 7,
-        "title": "The Lonely Century",
-        "author": "Noreena Hertz",
-        "category": "Health",
-        "image": "./images/7.png",
-        "status": "explore"
-      },
-      {
-        "id": 8,
-        "title": "Eat Better, Feel Better",
-        "author": "Giada De Laurentiis",
-        "category": "Education",
-        "image": "./images/8.png",
-        "status": "current"
-      },
-      {
-        "id": 9,
-        "title": "Dropshipping",
-        "author": "James Moore",
-        "category": "Education",
-        "image": "./images/9.png",
-        "status": "current"
-      },
-      {
-        "id": 10,
-        "title": "Being Boss",
-        "author": "Kathleen Shannon",
-        "category": "Education",
-        "image": "./images/10.png",
-        "status": "current"
-      }
-    ]
-  }
+  "books": [
+    {
+      "id": 1,
+      "title": "Bring Your Human to Work",
+      "author": "Erica Keswin",
+      "category": "Entrepreneurship",
+      "image": "/assets/img/1.png",
+      "status": "current",
+      "value": 30
+    },
+    {
+      "id": 15,
+      "title": "Employee to Entrepreneur",
+      "author": "Steve Glaveski",
+      "category": "Entrepreneurship",
+      "image": "/assets/img/11.png",
+      "status": "current",
+      "value": 20
+    },
+    {
+      "id": 3,
+      "title": "Doesn’t Hurt to Ask",
+      "author": "Trey Gowdy",
+      "category": "Politics",
+      "image": "/assets/img/3.png",
+      "status": "current",
+      "value": 30
+    },
+    {
+      "id": 4,
+      "title": "The Fate of Food",
+      "author": "Amanda Little",
+      "category": "Science",
+      "image": "/assets/img/4.png",
+      "status": "explore"
+    },
+    {
+      "id": 5,
+      "title": "Lives of the Stoics",
+      "author": "Ryan Holiday, Stephen Hansel",
+      "category": "Science",
+      "image": "/assets/img/5.png",
+      "status": "current",
+      "value": 50
+    },
+    {
+      "id": 6,
+      "title": "Loving Your Business",
+      "author": "Debbie King",
+      "category": "Health",
+      "image": "/assets/img/6.png",
+      "status": "current",
+      "value": 70
+    },
+    {
+      "id": 7,
+      "title": "The Lonely Century",
+      "author": "Noreena Hertz",
+      "category": "Health",
+      "image": "/assets/img/7.png",
+      "status": "current",
+      "value": 80
+    },
+    {
+      "id": 8,
+      "title": "Eat Better, Feel Better",
+      "author": "Giada De Laurentiis",
+      "category": "Education",
+      "image": "/assets/img/8.png",
+      "status": "current",
+      "value": 90
+    },
+    {
+      "id": 9,
+      "title": "Dropshipping",
+      "author": "James Moore",
+      "category": "Education",
+      "image": "/assets/img/9.png",
+      "status": "current",
+      "value": 13
+    },
+    {
+      "id": 10,
+      "title": "Being Boss",
+      "author": "Kathleen Shannon",
+      "category": "Education",
+      "image": "/assets/img/10.png",
+      "status": "current",
+      "value": 25
+    },
+    {
+      "id": 11,
+      "title": "Eat Better, Feel Better",
+      "author": "Giada De Laurentiis",
+      "category": "Education",
+      "image": "/assets/img/8.png",
+      "status": "explore"
+    },
+    {
+      "id": 12,
+      "title": "Dropshipping",
+      "author": "James Moore",
+      "category": "Education",
+      "image": "/assets/img/9.png",
+      "status": "explore"
+    },
+    {
+      "id": 13,
+      "title": "Being Boss",
+      "author": "Kathleen Shannon",
+      "category": "Education",
+      "image": "/assets/img/10.png",
+      "status": "explore"
+    },
+    {
+      "id": 14,
+      "title": "Bring Your Human to Work",
+      "author": "Erica Keswin",
+      "category": "Entrepreneurship",
+      "image": "/assets/img/1.png",
+      "status": "explore",
+      "value": 0
+    },
+    {
+      "id": 2,
+      "title": "Beyond Entrepreneurship",
+      "author": "Jim Collins & Bill Lazier",
+      "image": "/assets/img/2.png",
+      "status": "explore",
+      "value": 0
+    },
+    {
+      "id": 16,
+      "title": "Lives of the Stoics",
+      "author": "Ryan Holiday, Stephen Hansel",
+      "category": "Science",
+      "image": "/assets/img/5.png",
+      "status": "explore",
+      "value": 50
+    },
+    {
+      "id": 17,
+      "title": "Loving Your Business",
+      "author": "Debbie King",
+      "category": "Health",
+      "image": "/assets/img/6.png",
+      "status": "explore",
+      "value": 0
+    },
+    {
+      "id": 18,
+      "title": "Employee to Entrepreneur",
+      "author": "Steve Glaveski",
+      "category": "Entrepreneurship",
+      "image": "/assets/img/11.png",
+      "status": "explore",
+      "value": 0
+    }
+  ]
+}
