@@ -10,6 +10,7 @@ export default function CustomButton(props: ButtonProps) {
       children={props.children}
       onClick={props.onClick}
       sx={props.sx}
+      data-testid="customButton"
     />
   );
 }

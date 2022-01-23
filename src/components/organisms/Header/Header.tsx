@@ -29,7 +29,7 @@ const Header = () => {
   };
 
   return (
-    <AppBar position="static" >
+    <AppBar position="sticky" >
       <Container maxWidth="lg">
         <Toolbar disableGutters>
           <Logo />
@@ -61,6 +61,7 @@ const Header = () => {
               onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: "block", md: "none" },
+                maxWidth:"fit-content"
               }}
             >
               <Explore />
@@ -68,29 +69,28 @@ const Header = () => {
           </Box>
           <Box
             sx={{
-              flexGrow: 1,
+              
               display: { xs: "none", md: "block" },
               fontSize: "20px",
               marginLeft: "5px",
-              maxWidth: "fit-content",
             }}
           >
             <CustomSearch />
           </Box>
           <Box
             sx={{
-              flexGrow: 1,
+             
               display: { xs: "none", md: "block" },
-              maxWidth: "fit-content",
+             
             }}
           >
             <Explore />
           </Box>
           <Box
             sx={{
-              flexGrow: 1,
+              
               display: { xs: "none", md: "block" },
-              maxWidth: "fit-content",
+              
             }}
           >
             <CustomButton

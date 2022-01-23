@@ -13,12 +13,12 @@ export default function BookDetails() {
     container: {
       display: "flex",
       alignItems: "center",
-
-      height: "80vh",
+      marginBottom:"40px",
+      height: "auto"
     },
     left: {
       width: "500px",
-      height: "500px",
+      height: "auto",
       marginLeft: "18%",
       marginRight: "100px",
     },
@@ -30,16 +30,14 @@ export default function BookDetails() {
     },
     right: {
       width: "500px",
-      height: "500px",
+      height: "auto",
 
       display: "flex",
     },
     line: {
-      position: "absolute",
+      margin:"auto",
       width: "912px",
-      height: "0px",
-      left: "264px",
-      top: "704px",
+      height: "auto",
       border: "1px solid #E1ECFC",
       marginBottom:"30px"
     },
@@ -63,6 +61,7 @@ export default function BookDetails() {
     setValue(newValue);
   };
   return (
+    <>
     <div className={classes.container}>
       <div className={classes.left}>
         <Typographys
@@ -195,7 +194,9 @@ export default function BookDetails() {
           style={{ marginTop: "50px" }}
         />
       </div>
-      <div className={classes.line}> </div>
+      
     </div>
+    <div className={classes.line}> </div>
+    </>
   );
 }

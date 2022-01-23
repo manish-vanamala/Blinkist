@@ -6,6 +6,6 @@ type LogoProps = {
 }
 export default function Logo({handleClick}:LogoProps){
     return (
-           <img className='logo' src={BlinklistSvg} alt='Blinklist' onClick={handleClick}/>
+           <img className='logo' src={BlinklistSvg} alt='Blinklist' title="Logo" onClick={handleClick}/>
     );
 }

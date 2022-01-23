@@ -46,7 +46,7 @@ const StyledMenu = withStyles({
     }}
     transformOrigin={{
       position: "absolute",
-      top: "64px",
+      top: "100px !important",
       vertical: "top",
       horizontal: "center",
     }}
@@ -107,6 +107,7 @@ const Explore = (props: any) => {
         keepMounted
         open={Boolean(anchorEl)}
         onClose={handleClose}
+        style={{top:"9px"}}
       >
         <div className="navCategory-list-wrapper">
           <ul className="navCategory-list">
