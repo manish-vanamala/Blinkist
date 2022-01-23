@@ -56,6 +56,7 @@ const MyLibrary = () => {
               title={currData.title}
               author={currData.author}
               value={currData.value}
+              onClick={()=>{navigate("/book");}}
             />
           );
         });

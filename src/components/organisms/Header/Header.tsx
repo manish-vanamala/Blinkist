@@ -81,7 +81,7 @@ const Header = () => {
             sx={{
              
               display: { xs: "none", md: "block" },
-             
+              width:"150px",
             }}
           >
             <Explore />

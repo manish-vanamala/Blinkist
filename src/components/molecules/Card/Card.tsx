@@ -48,8 +48,8 @@ const CardItems = (props: CardItemsProps) => {
   });
   const classes = useStyles();
   return (
-    <Card className={classes.root} onClick={props.onClick}>
-      <CardActionArea>
+    <Card className={classes.root} onClick={props.onClick} data-testid="card">
+      <CardActionArea disableTouchRipple={true}>
         <CardMedia
           component="img"
           image={process.env.PUBLIC_URL + props.image}
@@ -70,13 +70,14 @@ const CardItems = (props: CardItemsProps) => {
         </CardContent>
       </CardActionArea>
       {props.role === "explore" && (
-        <CardActions>
+        <CardActions data-testid="add">
           <CustomButton
             size="large"
             variant="text"
             color="secondary"
             startIcon={<AddIcon />}
             fullWidth={true}
+            
           >
             Add to Library
           </CustomButton>

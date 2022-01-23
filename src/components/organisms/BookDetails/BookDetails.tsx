@@ -62,7 +62,7 @@ export default function BookDetails() {
   };
   return (
     <>
-    <div className={classes.container}>
+    <div className={classes.container} data-testid="bookDetails">
       <div className={classes.left}>
         <Typographys
           variant="body1"
