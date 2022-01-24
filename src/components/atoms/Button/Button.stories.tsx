@@ -8,7 +8,7 @@ export default {
 }
 const template:ComponentStory<typeof CustomButton>  = (args) => (
     <CustomThemeProvider>
-    <CustomButton 
+    <CustomButton  sx={{width:"200px"}}
      {...args}/>
     </CustomThemeProvider>
 );
@@ -17,11 +17,6 @@ export const Secondary = template.bind({});
 Secondary.args={
     color:"secondary",
     startIcon:<AddIcon/>,
-    children:"add to Library",
+    children:"add to Library"
 }
 
-export const connect = template.bind({});
-connect.args={
-    color:"primary",
-    children:"connect",
-}

@@ -77,8 +77,5 @@
     "@testing-library/react": "^12.1.2",
     "jest-sonar-reporter": "^2.0.0",
     "webpack": "^5.65.0"
-  },
-  "jest": {
-    "testResultsProcessor": "jest-sonar-reporter"
   }
 }

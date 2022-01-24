@@ -12,5 +12,6 @@ describe("BookDetails",()=>{
     const ButtonElement = screen.getByRole("button",{name:/Finished Reading/i});
     expect(ButtonElement).toBeInTheDocument();
     fireEvent.click(ButtonElement);
+    expect(window.location.pathname).toBe("/");
   });
 })
