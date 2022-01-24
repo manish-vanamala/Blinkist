@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="/home/manishv/Internship-files/React/blinkist/src/components/atoms/Logo/Logo.test.tsx">
+    <testCase name="renders a Logo" duration="88"/>
+  </file>
+  <file path="/home/manishv/Internship-files/React/blinkist/src/components/molecules/Banner/Banner.test.tsx">
+    <testCase name="Banner Should render Banner Heading" duration="95"/>
+    <testCase name="Banner Should render Banner content" duration="32"/>
+    <testCase name="Banner Should render Banner Image" duration="28"/>
+  </file>
+  <file path="/home/manishv/Internship-files/React/blinkist/src/components/atoms/Avatar/Avatar.test.tsx">
+    <testCase name="renders a avatar" duration="101"/>
+  </file>
+  <file path="/home/manishv/Internship-files/React/blinkist/src/components/atoms/Button/Button.test.tsx">
+    <testCase name="renders a Button" duration="120"/>
+  </file>
+  <file path="/home/manishv/Internship-files/React/blinkist/src/components/molecules/Footer/footer.test.tsx">
+    <testCase name="footer render footer title" duration="128"/>
+    <testCase name="footer render copyright from footer" duration="38"/>
+  </file>
+  <file path="/home/manishv/Internship-files/React/blinkist/src/components/molecules/Card/Card.test.tsx">
+    <testCase name="cardItems renders a resting Card" duration="193"/>
+    <testCase name="cardItems renders a explore card" duration="97"/>
+  </file>
+  <file path="/home/manishv/Internship-files/React/blinkist/src/components/organisms/BookDetails/BookDetails.test.tsx">
+    <testCase name="BookDetails render BookDetails title" duration="527"/>
+  </file>
+</testExecutions>

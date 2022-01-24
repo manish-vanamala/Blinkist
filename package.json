@@ -75,6 +75,7 @@
     "@storybook/preset-create-react-app": "^4.0.0",
     "@storybook/react": "^6.4.9",
     "@testing-library/react": "^12.1.2",
+    "jest-sonar-reporter": "^2.0.0",
     "webpack": "^5.65.0"
   }
 }
