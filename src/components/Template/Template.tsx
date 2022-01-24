@@ -5,7 +5,7 @@ export default function Template(props: any) {
   return (
     <>
       <div id="page-container">
-        <Header />
+        <Header /> 
         <div id="content-wrap">{props.children}</div>
         <div id="footer">
           <Footer />
