@@ -33,7 +33,7 @@
       "author": "Amanda Little",
       "category": "Science",
       "image": "/assets/img/4.png",
-      "status": "finished"
+      "status": "explore"
     },
     {
       "id": 5,
@@ -119,7 +119,7 @@
       "author": "Erica Keswin",
       "category": "Entrepreneurship",
       "image": "/assets/img/1.png",
-      "status": "finished",
+      "status": "explore",
       "value": 0
     },
     {
@@ -127,7 +127,7 @@
       "title": "Beyond Entrepreneurship",
       "author": "Jim Collins & Bill Lazier",
       "image": "/assets/img/2.png",
-      "status": "finished",
+      "status": "explore",
       "value": 0
     },
     {
