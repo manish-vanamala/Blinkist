@@ -1,31 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="/home/manishv/Internship-files/React/blinkist/src/components/molecules/Banner/Banner.test.tsx">
-    <testCase name="Banner Should render Banner Heading" duration="158"/>
-    <testCase name="Banner Should render Banner content" duration="71"/>
-    <testCase name="Banner Should render Banner Image" duration="64"/>
+    <testCase name="Banner Should render Banner Heading" duration="105"/>
+    <testCase name="Banner Should render Banner content" duration="40"/>
+    <testCase name="Banner Should render Banner Image" duration="25"/>
   </file>
   <file path="/home/manishv/Internship-files/React/blinkist/src/components/atoms/Avatar/Avatar.test.tsx">
-    <testCase name="renders a avatar" duration="94"/>
+    <testCase name="renders a avatar" duration="82"/>
   </file>
   <file path="/home/manishv/Internship-files/React/blinkist/src/components/atoms/Logo/Logo.test.tsx">
-    <testCase name="renders a Logo" duration="37"/>
+    <testCase name="renders a Logo" duration="34"/>
   </file>
   <file path="/home/manishv/Internship-files/React/blinkist/src/components/atoms/Button/Button.test.tsx">
-    <testCase name="renders a Button" duration="114"/>
+    <testCase name="renders a Button" duration="111"/>
   </file>
   <file path="/home/manishv/Internship-files/React/blinkist/src/components/molecules/Footer/footer.test.tsx">
-    <testCase name="footer render footer title" duration="125"/>
-    <testCase name="footer render copyright from footer" duration="28"/>
+    <testCase name="footer render footer title" duration="119"/>
+    <testCase name="footer render copyright from footer" duration="34"/>
   </file>
   <file path="/home/manishv/Internship-files/React/blinkist/src/components/molecules/Card/Card.test.tsx">
-    <testCase name="cardItems renders a resting Card" duration="268"/>
-    <testCase name="cardItems renders a explore card" duration="81"/>
+    <testCase name="cardItems renders a resting Card" duration="170"/>
+    <testCase name="cardItems renders a explore card" duration="78"/>
+    <testCase name="cardItems render a finished card" duration="230"/>
   </file>
   <file path="/home/manishv/Internship-files/React/blinkist/src/components/organisms/BookDetails/BookDetails.test.tsx">
-    <testCase name="BookDetails render BookDetails title" duration="615"/>
+    <testCase name="BookDetails render BookDetails title" duration="272"/>
+    <testCase name="BookDetails render a finished reading button" duration="189"/>
+    <testCase name="BookDetails render naviagate to my Library" duration="138"/>
   </file>
   <file path="/home/manishv/Internship-files/React/blinkist/src/components/organisms/Enterpreneurship/Enterpreneurship.test.tsx">
-    <testCase name="Enterpreneurship should render input" duration="248"/>
+    <testCase name="Enterpreneurship should render input" duration="161"/>
+    <testCase name="Enterpreneurship should be able to type into input" duration="35"/>
+    <testCase name="Enterpreneurship should render the card named dropshipping" duration="1045">
+      <failure message="TypeError: Cannot read properties of undefined (reading &apos;data&apos;)"><![CDATA[TypeError: Cannot read properties of undefined (reading 'data')
+    at processor (/home/manishv/Internship-files/React/blinkist/src/components/organisms/Enterpreneurship/Enterpreneurship.tsx:44:35)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+      <failure message="TypeError: Cannot read properties of undefined (reading &apos;data&apos;)"><![CDATA[TypeError: Cannot read properties of undefined (reading 'data')
+    at processor (/home/manishv/Internship-files/React/blinkist/src/components/organisms/Enterpreneurship/Enterpreneurship.tsx:44:35)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+      <failure message="TypeError: Cannot read properties of undefined (reading &apos;data&apos;)"><![CDATA[TypeError: Cannot read properties of undefined (reading 'data')
+    at processor (/home/manishv/Internship-files/React/blinkist/src/components/organisms/Enterpreneurship/Enterpreneurship.tsx:44:35)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+      <failure message="TypeError: Cannot read properties of undefined (reading &apos;data&apos;)"><![CDATA[TypeError: Cannot read properties of undefined (reading 'data')
+    at processor (/home/manishv/Internship-files/React/blinkist/src/components/organisms/Enterpreneurship/Enterpreneurship.tsx:44:35)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+      <failure message="Error: Unable to find an element by: [data-testid=&quot;card-12&quot;]"><![CDATA[Error: Unable to find an element by: [data-testid="card-12"]
+
+Ignored nodes: comments, <script />, <style />
+<body>
+  <div>
+    <div
+      class="input"
+    >
+      <div
+        class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-adornedStart css-1lo5lg6-MuiInputBase-root-MuiInput-root"
+      >
+        <div>
+          <button
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+            tabindex="0"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+              data-testid="SearchIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+              />
+            </svg>
+            <span
+              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+        <input
+          aria-label="description"
+          class="MuiInput-input MuiInputBase-input MuiInputBase-inputAdornedStart css-1x51dt5-MuiInputBase-input-MuiInput-input"
+          name="text"
+          placeholder="Search by Title or Author"
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg makeStyles-container-4 css-1oqqzyl-MuiContainer-root"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-container css-1pu2jq9-MuiGrid-root"
+      />
+    </div>
+  </div>
+</body>
+    at waitForWrapper (/home/manishv/Internship-files/React/blinkist/node_modules/@testing-library/dom/dist/wait-for.js:187:27)
+    at findByTestId (/home/manishv/Internship-files/React/blinkist/node_modules/@testing-library/dom/dist/query-helpers.js:101:33)
+    at Object.<anonymous> (/home/manishv/Internship-files/React/blinkist/src/components/organisms/Enterpreneurship/Enterpreneurship.test.tsx:30:41)
+    at Promise.then.completed (/home/manishv/Internship-files/React/blinkist/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/home/manishv/Internship-files/React/blinkist/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/home/manishv/Internship-files/React/blinkist/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at _runTest (/home/manishv/Internship-files/React/blinkist/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/home/manishv/Internship-files/React/blinkist/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/home/manishv/Internship-files/React/blinkist/node_modules/jest-circus/build/run.js:60:9)
+    at run (/home/manishv/Internship-files/React/blinkist/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/home/manishv/Internship-files/React/blinkist/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/home/manishv/Internship-files/React/blinkist/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/home/manishv/Internship-files/React/blinkist/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/home/manishv/Internship-files/React/blinkist/node_modules/jest-runner/build/runTest.js:475:34)
+    at Object.worker (/home/manishv/Internship-files/React/blinkist/node_modules/jest-runner/build/testWorker.js:133:12)]]></failure>
+    </testCase>
   </file>
 </testExecutions>

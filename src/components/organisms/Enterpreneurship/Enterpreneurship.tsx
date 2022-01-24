@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Container, Box } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 import Card from "../../molecules/Card/Card";
 import CircularProgress from "@mui/material/CircularProgress";
 import Input from "@mui/material/Input";
@@ -7,6 +7,7 @@ import CustomSearch from "../../atoms/Search/CustomSearch";
 import './Enterpreneurship.css';
 import { makeStyles } from "@mui/styles";
 import { useNavigate } from "react-router-dom";
+import axios from 'axios';
 interface Book {
   id: number;
   title: string;
@@ -38,10 +39,9 @@ const Enterpreneurship = () => {
       if (input) {
         uri += `&q=${input}`;
     }
-    let response = await fetch(uri);
+    let response = await axios.get(uri);
       
-
-      let result = await response.json();
+      let result = await response.data;
       
       setData(result);
     };
@@ -60,7 +60,7 @@ const Enterpreneurship = () => {
         console.log(data);
         return data.map((currData: Book) => {
           return (
-            <Card
+            <Card data-testid={`card-${currData.id}`}
               key={currData.id}
               image={currData.image}
               role={currData.status}
@@ -96,17 +96,13 @@ const Enterpreneurship = () => {
       </div>
       <Container className={classes.container}>
        
-        <Box
-          sx={{
-            display: "flex",
-            margin:"10px",
-            alignItems: "center",
-            flexWrap: "wrap",
-            
-          }}
+        <Grid
+            container
+            rowSpacing={3}
+            columnSpacing={{ xs: 1, sm: 2, md: 2 }}
         >
           {cards()}
-        </Box>
+        </Grid>
       </Container>
     </>
   );

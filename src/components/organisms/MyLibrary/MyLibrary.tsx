@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Container, Box } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 import Typography from "../../atoms/typography/Typographys";
 import Tab from "../Tab/CustomTabs";
 import Card from "../../molecules/Card/Card";
@@ -85,17 +85,13 @@ const MyLibrary = () => {
         <Typography variant="h1" content="My Library" />
       </div>
       <Tab stateHandler={handleState} />
-      <Box
-        sx={{
-          display: "flex",
-
-          alignItems: "center",
-          margin: "10px",
-          flexWrap: "wrap",
-        }}
+      <Grid
+            container
+            rowSpacing={3}
+            columnSpacing={{ xs: 1, sm: 2, md: 2 }}
       >
         {cards()}
-      </Box>
+      </Grid>
     </Container>
   );
 };
