@@ -11,6 +11,7 @@ export default function CustomButton(props: ButtonProps) {
       onClick={props.onClick}
       sx={props.sx}
       data-testid="customButton"
+      disableRipple={true}
     />
   );
 }

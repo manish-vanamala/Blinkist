@@ -64,7 +64,6 @@ const Header = () => {
                 maxWidth:"fit-content"
               }}
             >
-              <Explore />
             </Menu>
           </Box>
           <Box
@@ -102,12 +101,15 @@ const Header = () => {
                 border: "none",
                 borderRadius: "0px 0px 0px 0px",
                 display: "block",
-                width: "200px",
+                marginLeft:"40px",
+                width: "120px",
                 "&:hover": {
                   color: "black",
                   backgroundColor: "white",
+                  borderBottom:"3px solid green",
                 },
               }}
+              
             >
               MyLibrary
             </CustomButton>

@@ -39,11 +39,9 @@ const Enterpreneurship = () => {
       if (input) {
         uri += `&q=${input}`;
     }
-    let response = await axios.get(uri);
-      
-      let result = await response.data;
-      
-      setData(result);
+    let {data} = await axios.get(uri);
+      console.log(data);
+      setData(data);
     };
     processor();
   }, [input]);
@@ -57,10 +55,9 @@ const Enterpreneurship = () => {
     if (data == null) {
       return <CircularProgress />;
     } else {
-        console.log(data);
         return data.map((currData: Book) => {
           return (
-            <Card data-testid={`card-${currData.id}`}
+            <Card testid={`card-${currData.id}`}
               key={currData.id}
               image={currData.image}
               role={currData.status}

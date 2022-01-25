@@ -20,6 +20,7 @@ export type CardItemsProps = {
   author: string;
   role: string;
   value:number;
+  testid?:string;
   onClick?:React.MouseEventHandler<HTMLDivElement>;
 };
 const CardItems = (props: CardItemsProps) => {
@@ -48,7 +49,7 @@ const CardItems = (props: CardItemsProps) => {
   });
   const classes = useStyles();
   return (
-    <Card className={classes.root} onClick={props.onClick} data-testid="card">
+    <Card className={classes.root} onClick={props.onClick} data-testid={props.testid}>
       <CardActionArea disableTouchRipple={true}>
         <CardMedia
           component="img"
@@ -84,7 +85,7 @@ const CardItems = (props: CardItemsProps) => {
         </CardActions>
       )}
       {props.role === "current" && (
-        <CardActions>
+        <CardActions data-testid="card">
           <MoreHorizIcon fontSize="small" className={classes.MoreHoriz} />
           <div>
             <LinearProgress

@@ -78,7 +78,7 @@ const Explore = (props: any) => {
     toggle();
   };
   return (
-    <div>
+    <div data-testid="explorebutton">
       <CustomButton
         aria-controls="customized-menu"
         aria-haspopup="true"
@@ -88,15 +88,17 @@ const Explore = (props: any) => {
           border: "none",
           borderRadius: "0px 0px 0px 0px",
           display: "block",
-          width: "200px",
+          marginLeft:"40px",
+          width: "120px",
           "&:hover": {
             color: "black",
             backgroundColor: "white",
+            borderBottom:"3px solid green",
           },
         }}
         endIcon={
-          (expand === 0 && <ExpandMoreIcon />) ||
-          (expand === 1 && <ExpandLessIcon />)
+          (expand === 0 && <ExpandMoreIcon data-testid="expandmore"/>) ||
+          (expand === 1 && <ExpandLessIcon data-testid="expandless"/>)
         }
       >
         Explore
@@ -113,6 +115,7 @@ const Explore = (props: any) => {
           <ul className="navCategory-list">
             <Link to="/enterpreneurship">
               <li
+                data-testid="toggleDropdown"
                 className="content"
                 onClick={() => {
                   document.body.style.backgroundColor = "white";
