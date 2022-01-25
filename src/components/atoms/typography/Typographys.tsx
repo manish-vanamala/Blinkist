@@ -8,6 +8,6 @@ type TypographysProps = {
 }
 export default function Typographys({variant,content,styles}:TypographysProps) {
     return (
-        <div className={variant} style={styles}>{content}</div>
+        <div data-testid="text" className={variant} style={styles}>{content}</div>
     )
 }

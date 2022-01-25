@@ -106,7 +106,7 @@ const Header = () => {
                 "&:hover": {
                   color: "black",
                   backgroundColor: "white",
-                  borderBottom:"3px solid green",
+                  borderBottom:"3px solid #22C870",
                 },
               }}
               

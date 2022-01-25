@@ -37,6 +37,19 @@ const MyLibrary = () => {
   const handleState = (state: string) => {
     setCurrState(state);
   };
+  function renderCard(currData:Book){
+    return (
+      <Card
+        key={currData.id}
+        image={currData.image}
+        role={currData.status}
+        title={currData.title}
+        author={currData.author}
+        value={currData.value}
+        onClick={()=>{navigate("/book");}}
+      />
+    );
+  }
 
   const cards = () => {
     console.log(data);
@@ -48,33 +61,11 @@ const MyLibrary = () => {
     } else {
       if (currState === "current") {
         return currentlyReading.map((currData: Book) => {
-          return (
-            <Card
-              key={currData.id}
-              image={currData.image}
-              role={currData.status}
-              title={currData.title}
-              author={currData.author}
-              value={currData.value}
-              onClick={()=>{navigate("/book");}}
-            />
-          );
+          return renderCard(currData);
         });
       } else {
         return finishedReading.map((currData: Book) => {
-          return (
-            <Card
-              key={currData.id}
-              image={currData.image}
-              role={currData.status}
-              title={currData.title}
-              author={currData.author}
-              value={currData.value}
-              onClick={() => {
-                navigate("/book");
-              }}
-            />
-          );
+          return renderCard(currData);
         });
       }
     }

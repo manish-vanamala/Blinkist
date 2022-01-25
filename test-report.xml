@@ -1,44 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="/home/manishv/Internship-files/React/blinkist/src/components/molecules/Banner/Banner.test.tsx">
-    <testCase name="Banner Should render Banner Heading" duration="160"/>
-    <testCase name="Banner Should render Banner content" duration="65"/>
-    <testCase name="Banner Should render Banner Image" duration="29"/>
-  </file>
   <file path="/home/manishv/Internship-files/React/blinkist/src/components/atoms/Button/Button.test.tsx">
-    <testCase name="renders a Button" duration="194"/>
-  </file>
-  <file path="/home/manishv/Internship-files/React/blinkist/src/components/atoms/Avatar/Avatar.test.tsx">
-    <testCase name="renders a avatar" duration="112"/>
+    <testCase name="renders a Button" duration="177"/>
   </file>
   <file path="/home/manishv/Internship-files/React/blinkist/src/components/molecules/Footer/footer.test.tsx">
-    <testCase name="footer render footer title" duration="137"/>
-    <testCase name="footer render copyright from footer" duration="46"/>
-  </file>
-  <file path="/home/manishv/Internship-files/React/blinkist/src/components/atoms/Logo/Logo.test.tsx">
-    <testCase name="renders a Logo" duration="44"/>
+    <testCase name="footer render footer title" duration="150"/>
+    <testCase name="footer render copyright from footer" duration="40"/>
   </file>
   <file path="/home/manishv/Internship-files/React/blinkist/src/components/molecules/Card/Card.test.tsx">
-    <testCase name="cardItems renders a resting Card" duration="232"/>
-    <testCase name="cardItems renders a explore card" duration="148"/>
-    <testCase name="cardItems render a finished card" duration="305"/>
+    <testCase name="cardItems renders a resting Card" duration="209"/>
+    <testCase name="cardItems renders a explore card" duration="103"/>
+    <testCase name="cardItems render a finished card" duration="363"/>
   </file>
   <file path="/home/manishv/Internship-files/React/blinkist/src/components/organisms/BookDetails/BookDetails.test.tsx">
-    <testCase name="BookDetails render BookDetails title" duration="465"/>
-    <testCase name="BookDetails render a finished reading button" duration="272"/>
-    <testCase name="BookDetails render naviagate to my Library" duration="100"/>
+    <testCase name="BookDetails render BookDetails title" duration="438"/>
+    <testCase name="BookDetails render a finished reading button" duration="430"/>
+    <testCase name="BookDetails render naviagate to my Library" duration="217"/>
   </file>
-  <file path="/home/manishv/Internship-files/React/blinkist/src/components/organisms/Header/Header.test.tsx">
-    <testCase name="Header Component should render explore component" duration="462"/>
-    <testCase name="Header Component should render MyLibrary Button" duration="283"/>
-    <testCase name="Header Component should Mylibrary on click naviagate to homepage" duration="233"/>
-    <testCase name="Header Component should contain avatar" duration="96"/>
+  <file path="/home/manishv/Internship-files/React/blinkist/src/components/atoms/Logo/Logo.test.tsx">
+    <testCase name="renders a Logo" duration="36"/>
+  </file>
+  <file path="/home/manishv/Internship-files/React/blinkist/src/components/atoms/Avatar/Avatar.test.tsx">
+    <testCase name="renders a avatar" duration="61"/>
   </file>
   <file path="/home/manishv/Internship-files/React/blinkist/src/components/organisms/Explore/Explore.test.tsx">
-    <testCase name="Explore component should render explore button" duration="261"/>
-    <testCase name="Explore component should have expandMoreIcon" duration="68"/>
-    <testCase name="Explore component should explore button to be clickable" duration="149"/>
-    <testCase name="Explore component should have less icon on click explore button" duration="99"/>
-    <testCase name="Explore component should navigate to bookdetailspage on click enterpreneurship link" duration="156"/>
+    <testCase name="Explore component should render explore button" duration="602"/>
+    <testCase name="Explore component should have expandMoreIcon" duration="116"/>
+    <testCase name="Explore component should explore button to be clickable" duration="268"/>
+    <testCase name="Explore component should have less icon on click explore button" duration="184"/>
+    <testCase name="Explore component should navigate to bookdetailspage on click enterpreneurship link" duration="276"/>
+    <testCase name="Explore component should have different links" duration="159"/>
+  </file>
+  <file path="/home/manishv/Internship-files/React/blinkist/src/components/molecules/Banner/Banner.test.tsx">
+    <testCase name="Banner Should render Banner Heading" duration="62"/>
+    <testCase name="Banner Should render Banner content" duration="22"/>
+    <testCase name="Banner Should render Banner Image" duration="19"/>
+  </file>
+  <file path="/home/manishv/Internship-files/React/blinkist/src/components/organisms/Header/Header.test.tsx">
+    <testCase name="Header Component should render explore component" duration="758"/>
+    <testCase name="Header Component should render MyLibrary Button" duration="449"/>
+    <testCase name="Header Component should Mylibrary on click naviagate to homepage" duration="373"/>
+    <testCase name="Header Component should contain avatar" duration="169"/>
+  </file>
+  <file path="/home/manishv/Internship-files/React/blinkist/src/components/organisms/Enterpreneurship/Enterpreneurship.test.tsx">
+    <testCase name="input type to be worked should render input" duration="431"/>
+    <testCase name="input type to be worked should be able to type into input" duration="122"/>
+    <testCase name="Enterpreneurship should render the card named loving your business" duration="153"/>
+    <testCase name="Enterpreneurship should render two cards" duration="86"/>
+    <testCase name="Enterpreneurship should navigate to book details page on click the card" duration="93"/>
   </file>
 </testExecutions>

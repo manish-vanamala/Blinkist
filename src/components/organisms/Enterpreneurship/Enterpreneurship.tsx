@@ -39,9 +39,9 @@ const Enterpreneurship = () => {
       if (input) {
         uri += `&q=${input}`;
     }
-    let {data} = await axios.get(uri);
-      console.log(data);
-      setData(data);
+    let response = await axios.get(uri);
+      
+      setData(response.data);
     };
     processor();
   }, [input]);
@@ -66,7 +66,6 @@ const Enterpreneurship = () => {
               value={currData.value}
               onClick={()=>{
                 localStorage.setItem("id",(currData.id).toString());
-                console.log(localStorage.getItem("id"));
                 navigate("/book");
               }}
             />
