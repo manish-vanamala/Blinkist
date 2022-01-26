@@ -75,7 +75,7 @@ const Enterpreneurship = () => {
     }
   };
   return (
-    <>
+    <div data-testid="Enterpreneurship">
       <div className="input">
         
         <Input
@@ -100,7 +100,7 @@ const Enterpreneurship = () => {
           {cards()}
         </Grid>
       </Container>
-    </>
+    </div>
   );
 };
 

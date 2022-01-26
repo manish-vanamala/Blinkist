@@ -85,7 +85,7 @@ const CardItems = (props: CardItemsProps) => {
         </CardActions>
       )}
       {props.role === "current" && (
-        <CardActions data-testid="card">
+        <CardActions data-testid="current">
           <MoreHorizIcon fontSize="small" className={classes.MoreHoriz} />
           <div>
             <LinearProgress
@@ -106,7 +106,7 @@ const CardItems = (props: CardItemsProps) => {
         </CardActions>
       )}
       {props.role === "finished" && (
-        <CardActions>
+        <CardActions data-testid="finished">
           <CustomButton
             size="large"
             variant="text"

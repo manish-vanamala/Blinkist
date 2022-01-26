@@ -35,7 +35,7 @@ const Footer = () => {
   });
   const classes = useStyles();
   return (
-    <div className={classes.parent}>
+    <div className={classes.parent} data-testid='footer'>
       <div className={classes.body}>
         <div className={classes.flex}>
           <div>

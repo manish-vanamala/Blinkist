@@ -6,6 +6,7 @@ import Card from "../../molecules/Card/Card";
 import CircularProgress from "@mui/material/CircularProgress";
 import { makeStyles } from "@mui/styles";
 import { useNavigate } from "react-router-dom";
+import axios from 'axios';
 interface Book {
   id: number;
   title: string;
@@ -28,9 +29,8 @@ const MyLibrary = () => {
   const [currState, setCurrState] = useState("current");
   useEffect(() => {
     const processor = async () => {
-      let response = await fetch("http://localhost:8086/books");
-      let result = await response.json();
-      setData(result);
+      let response = await axios.get("http://localhost:8086/books");
+      setData(response.data);
     };
     processor();
   }, []);
@@ -39,7 +39,7 @@ const MyLibrary = () => {
   };
   function renderCard(currData:Book){
     return (
-      <Card
+      <Card testid={`card-${currData.id}`}
         key={currData.id}
         image={currData.image}
         role={currData.status}
@@ -52,7 +52,6 @@ const MyLibrary = () => {
   }
 
   const cards = () => {
-    console.log(data);
     let currentlyReading = data.filter((book) => book.status === "current");
 
     let finishedReading = data.filter((book) => book.status === "finished");
@@ -71,12 +70,12 @@ const MyLibrary = () => {
     }
   };
   return (
-    <Container>
+    <Container data-testid="mylibrary">
       <div className={classes.title}>
         <Typography variant="h1" content="My Library" />
       </div>
       <Tab stateHandler={handleState} />
-      <Grid
+      <Grid data-testid='grid'
             container
             rowSpacing={3}
             columnSpacing={{ xs: 1, sm: 2, md: 2 }}

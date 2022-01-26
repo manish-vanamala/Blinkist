@@ -12,7 +12,7 @@ describe("cardItems",()=>{
     it("renders a resting Card",()=>{
         
         render(<CardItems title={book.title} author={book.author} role={book.role} image={book.image} value={book.value} />);
-        const cardElement = screen.getByTestId("card");
+        const cardElement = screen.getByTestId("current");
         expect(cardElement).toBeInTheDocument();
     })
     it("renders a explore card",()=>{

@@ -29,7 +29,7 @@ const Header = () => {
   };
 
   return (
-    <AppBar position="sticky" >
+    <AppBar position="sticky" data-testid='header'>
       <Container maxWidth="lg">
         <Toolbar disableGutters>
           <Logo />
