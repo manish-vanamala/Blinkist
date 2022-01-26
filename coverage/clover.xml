@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1643114899099" clover="3.2.0">
-  <project timestamp="1643114899099" name="All files">
-    <metrics statements="228" coveredstatements="74" conditionals="26" coveredconditionals="14" methods="85" coveredmethods="24" elements="339" coveredelements="112" complexity="0" loc="228" ncloc="228" packages="20" files="42" classes="42"/>
+<coverage generated="1643180281133" clover="3.2.0">
+  <project timestamp="1643180281133" name="All files">
+    <metrics statements="228" coveredstatements="109" conditionals="26" coveredconditionals="14" methods="85" coveredmethods="42" elements="339" coveredelements="165" complexity="0" loc="228" ncloc="228" packages="20" files="42" classes="42"/>
     <package name="src">
       <metrics statements="13" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="0"/>
       <file name="App.tsx" path="/home/manishv/Internship-files/React/blinkist/src/App.tsx">
@@ -115,7 +115,7 @@
       </file>
       <file name="CustomButton.tsx" path="/home/manishv/Internship-files/React/blinkist/src/components/atoms/Button/CustomButton.tsx">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="45" type="stmt"/>
+        <line num="3" count="89" type="stmt"/>
       </file>
     </package>
     <package name="src.components.atoms.Logo">
@@ -152,7 +152,7 @@
       </file>
       <file name="Typographys.tsx" path="/home/manishv/Internship-files/React/blinkist/src/components/atoms/typography/Typographys.tsx">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="10" count="404" type="stmt"/>
+        <line num="10" count="850" type="stmt"/>
       </file>
     </package>
     <package name="src.components.molecules.Banner">
@@ -208,7 +208,7 @@
       </file>
     </package>
     <package name="src.components.organisms.BookDetails">
-      <metrics statements="17" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
+      <metrics statements="17" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="3"/>
       <file name="BookDetails.stories.tsx" path="/home/manishv/Internship-files/React/blinkist/src/components/organisms/BookDetails/BookDetails.stories.tsx">
         <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="9" count="0" type="stmt"/>
@@ -216,21 +216,21 @@
         <line num="17" count="0" type="stmt"/>
       </file>
       <file name="BookDetails.tsx" path="/home/manishv/Internship-files/React/blinkist/src/components/organisms/BookDetails/BookDetails.tsx">
-        <metrics statements="14" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
-        <line num="11" count="3" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="45" count="3" type="stmt"/>
-        <line num="46" count="3" type="stmt"/>
-        <line num="47" count="3" type="stmt"/>
-        <line num="48" count="1" type="stmt"/>
-        <line num="49" count="1" type="stmt"/>
-        <line num="50" count="0" type="stmt"/>
-        <line num="51" count="0" type="stmt"/>
-        <line num="52" count="0" type="stmt"/>
-        <line num="57" count="0" type="stmt"/>
-        <line num="60" count="3" type="stmt"/>
-        <line num="61" count="0" type="stmt"/>
-        <line num="63" count="3" type="stmt"/>
+        <metrics statements="14" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="14" count="10" type="stmt"/>
+        <line num="15" count="10" type="stmt"/>
+        <line num="48" count="10" type="stmt"/>
+        <line num="49" count="10" type="stmt"/>
+        <line num="50" count="10" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="62" count="10" type="stmt"/>
+        <line num="63" count="2" type="stmt"/>
+        <line num="65" count="10" type="stmt"/>
       </file>
     </package>
     <package name="src.components.organisms.Enterpreneurship">
@@ -271,7 +271,7 @@
       </file>
     </package>
     <package name="src.components.organisms.Explore">
-      <metrics statements="58" coveredstatements="17" conditionals="6" coveredconditionals="5" methods="24" coveredmethods="5"/>
+      <metrics statements="58" coveredstatements="51" conditionals="6" coveredconditionals="5" methods="24" coveredmethods="22"/>
       <file name="Explore.stories.tsx" path="/home/manishv/Internship-files/React/blinkist/src/components/organisms/Explore/Explore.stories.tsx">
         <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="13" count="0" type="stmt"/>
@@ -279,62 +279,62 @@
         <line num="21" count="0" type="stmt"/>
       </file>
       <file name="Explore.tsx" path="/home/manishv/Internship-files/React/blinkist/src/components/organisms/Explore/Explore.tsx">
-        <metrics statements="55" coveredstatements="17" conditionals="6" coveredconditionals="5" methods="23" coveredmethods="5"/>
+        <metrics statements="55" coveredstatements="51" conditionals="6" coveredconditionals="5" methods="23" coveredmethods="22"/>
         <line num="30" count="2" type="stmt"/>
-        <line num="39" count="16" type="stmt"/>
+        <line num="39" count="39" type="stmt"/>
         <line num="57" count="2" type="stmt"/>
-        <line num="58" count="16" type="stmt"/>
-        <line num="59" count="16" type="stmt"/>
-        <line num="60" count="16" type="stmt"/>
-        <line num="62" count="16" type="stmt"/>
-        <line num="63" count="4" type="cond" truecount="1" falsecount="1"/>
-        <line num="64" count="4" type="stmt"/>
-        <line num="65" count="4" type="stmt"/>
+        <line num="58" count="39" type="stmt"/>
+        <line num="59" count="39" type="stmt"/>
+        <line num="60" count="39" type="stmt"/>
+        <line num="62" count="39" type="stmt"/>
+        <line num="63" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="64" count="6" type="stmt"/>
+        <line num="65" count="6" type="stmt"/>
         <line num="67" count="0" type="stmt"/>
         <line num="68" count="0" type="stmt"/>
-        <line num="71" count="16" type="stmt"/>
-        <line num="72" count="4" type="stmt"/>
-        <line num="73" count="4" type="stmt"/>
-        <line num="76" count="16" type="stmt"/>
+        <line num="71" count="39" type="stmt"/>
+        <line num="72" count="6" type="stmt"/>
+        <line num="73" count="6" type="stmt"/>
+        <line num="76" count="39" type="stmt"/>
         <line num="77" count="0" type="stmt"/>
         <line num="78" count="0" type="stmt"/>
-        <line num="80" count="16" type="stmt"/>
-        <line num="121" count="1" type="stmt"/>
-        <line num="122" count="1" type="stmt"/>
-        <line num="133" count="0" type="stmt"/>
-        <line num="134" count="0" type="stmt"/>
-        <line num="145" count="0" type="stmt"/>
-        <line num="146" count="0" type="stmt"/>
-        <line num="157" count="0" type="stmt"/>
-        <line num="158" count="0" type="stmt"/>
-        <line num="169" count="0" type="stmt"/>
-        <line num="170" count="0" type="stmt"/>
-        <line num="181" count="0" type="stmt"/>
-        <line num="182" count="0" type="stmt"/>
-        <line num="196" count="0" type="stmt"/>
-        <line num="197" count="0" type="stmt"/>
-        <line num="208" count="0" type="stmt"/>
-        <line num="209" count="0" type="stmt"/>
-        <line num="220" count="0" type="stmt"/>
-        <line num="221" count="0" type="stmt"/>
-        <line num="233" count="0" type="stmt"/>
-        <line num="234" count="0" type="stmt"/>
-        <line num="248" count="0" type="stmt"/>
-        <line num="249" count="0" type="stmt"/>
-        <line num="260" count="0" type="stmt"/>
-        <line num="261" count="0" type="stmt"/>
-        <line num="274" count="0" type="stmt"/>
-        <line num="275" count="0" type="stmt"/>
-        <line num="287" count="0" type="stmt"/>
-        <line num="288" count="0" type="stmt"/>
-        <line num="303" count="0" type="stmt"/>
-        <line num="304" count="0" type="stmt"/>
-        <line num="315" count="0" type="stmt"/>
-        <line num="316" count="0" type="stmt"/>
-        <line num="327" count="0" type="stmt"/>
-        <line num="328" count="0" type="stmt"/>
-        <line num="339" count="0" type="stmt"/>
-        <line num="340" count="0" type="stmt"/>
+        <line num="80" count="39" type="stmt"/>
+        <line num="121" count="2" type="stmt"/>
+        <line num="122" count="2" type="stmt"/>
+        <line num="133" count="1" type="stmt"/>
+        <line num="134" count="1" type="stmt"/>
+        <line num="145" count="1" type="stmt"/>
+        <line num="146" count="1" type="stmt"/>
+        <line num="157" count="1" type="stmt"/>
+        <line num="158" count="1" type="stmt"/>
+        <line num="169" count="1" type="stmt"/>
+        <line num="170" count="1" type="stmt"/>
+        <line num="181" count="1" type="stmt"/>
+        <line num="182" count="1" type="stmt"/>
+        <line num="196" count="1" type="stmt"/>
+        <line num="197" count="1" type="stmt"/>
+        <line num="208" count="1" type="stmt"/>
+        <line num="209" count="1" type="stmt"/>
+        <line num="220" count="1" type="stmt"/>
+        <line num="221" count="1" type="stmt"/>
+        <line num="233" count="1" type="stmt"/>
+        <line num="234" count="1" type="stmt"/>
+        <line num="248" count="1" type="stmt"/>
+        <line num="249" count="1" type="stmt"/>
+        <line num="260" count="1" type="stmt"/>
+        <line num="261" count="1" type="stmt"/>
+        <line num="274" count="1" type="stmt"/>
+        <line num="275" count="1" type="stmt"/>
+        <line num="287" count="1" type="stmt"/>
+        <line num="288" count="1" type="stmt"/>
+        <line num="303" count="1" type="stmt"/>
+        <line num="304" count="1" type="stmt"/>
+        <line num="315" count="1" type="stmt"/>
+        <line num="316" count="1" type="stmt"/>
+        <line num="327" count="1" type="stmt"/>
+        <line num="328" count="1" type="stmt"/>
+        <line num="339" count="1" type="stmt"/>
+        <line num="340" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.components.organisms.Header">

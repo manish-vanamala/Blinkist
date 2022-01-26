@@ -5,7 +5,7 @@ import TimeIcon from "@mui/icons-material/AccessTime";
 import image from "./2.png";
 import CustomButton from "../../atoms/Button/CustomButton";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import { Tab, Tabs } from "@mui/material";
+import { Tab} from "@mui/material";
 import TabPanel from "@mui/lab/TabPanel";
 import { useNavigate } from "react-router-dom";
 import TabContext from "@mui/lab/TabContext";
