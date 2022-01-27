@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Grid } from "@mui/material";
 import Card from "../../molecules/Card/Card";
+import Typographys from "../../atoms/typography/Typographys";
 import CircularProgress from "@mui/material/CircularProgress";
 import Input from "@mui/material/Input";
 import CustomSearch from "../../atoms/Search/CustomSearch";
@@ -50,14 +51,15 @@ const Enterpreneurship = () => {
   };
   
 
-  const cards = () => {
+  const cards = (category:string) => {
     
+    let categoryBasedBooks = data.filter((book) => book.category === category);
     if (data == null) {
       return <CircularProgress />;
     } else {
-        return data.map((currData: Book) => {
+        return categoryBasedBooks.map((currData: Book) => {
           return (
-            <Card testid={`card-${currData.id}`}
+             <Card testid={`card-${currData.id}`}
               key={currData.id}
               image={currData.image}
               role={currData.status}
@@ -86,18 +88,35 @@ const Enterpreneurship = () => {
           inputProps={ariaLabel}
           onChange={handleChange}
           fullWidth={true}
-          sx={{position:"relative",left:"10%",width:"800px"}}
+          sx={{position:"relative",left:"10%",width:"800px",marginBottom:"40px"}}
+          
         />
         
       </div>
       <Container className={classes.container}>
-       
+        {!input && <Typographys variant="subtitle1" content="Trending blinks" styles={{margin:"30px 25px 25px 25px",fontSize:"24px"}}/>}
         <Grid
             container
             rowSpacing={3}
             columnSpacing={{ xs: 1, sm: 2, md: 2 }}
         >
-          {cards()}
+          {cards("blink")}
+        </Grid>
+        {!input && <Typographys variant="subtitle1" content="Just added" styles={{margin:"25px",fontSize:"24px"}}/>}
+        <Grid
+            container
+            rowSpacing={3}
+            columnSpacing={{ xs: 1, sm: 2, md: 2 }}
+        >
+          {cards("added")}
+        </Grid>
+        {!input && <Typographys variant="subtitle1" content="Featured audio blinks" styles={{margin:"25px",fontSize:"24px"}}/>}
+        <Grid
+            container
+            rowSpacing={3}
+            columnSpacing={{ xs: 1, sm: 2, md: 2 }}
+        >
+          {cards("featured")}
         </Grid>
       </Container>
     </div>
