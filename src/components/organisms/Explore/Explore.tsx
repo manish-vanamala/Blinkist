@@ -8,6 +8,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import { FaHistory, FaGlobeAsia, FaHeart, FaLandmark } from "react-icons/fa";
 import { AiOutlineRocket } from "react-icons/ai";
+import Backdrop from "@mui/material/Backdrop";
 import {
   MdOutlineScience,
   MdOutlineAccountBalanceWallet,
@@ -21,22 +22,27 @@ import {
   RiPsychotherapyLine,
   RiLeafLine,
   RiLightbulbFlashLine,
-  RiHeartsLine
+  RiHeartsLine,
 } from "react-icons/ri";
 import { GiSandsOfTime } from "react-icons/gi";
 import { FiTarget } from "react-icons/fi";
 
-
 const StyledMenu = withStyles({
   paper: {
     border: "1px solid #d3d4d5",
-    width: "100%",
-    position: "absolute",
-    top: "64px",
-    left: "16px",
   },
 })((props: any) => (
   <Menu
+    marginThreshold={0}
+    PaperProps={{
+      style: {
+        width: "100%",
+        maxWidth: "100%",
+        left: 0,
+        right: 0,
+        borderRadius: "0px",
+      },
+    }}
     open={false}
     elevation={0}
     anchorEl={null}
@@ -46,7 +52,6 @@ const StyledMenu = withStyles({
     }}
     transformOrigin={{
       position: "absolute",
-      top: "100px !important",
       vertical: "top",
       horizontal: "center",
     }}
@@ -55,17 +60,15 @@ const StyledMenu = withStyles({
 ));
 
 const Explore = (props: any) => {
-  const [expand, setExpand] = useState(0);
+  const [expand, setExpand] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
   const navigate = useNavigate();
 
   const toggle = () => {
-    if (expand === 0) {
-      setExpand(1);
-      document.body.style.backgroundColor = "rgba(157, 163, 166, 0.45)";
+    if (!expand) {
+      setExpand(true);
     } else {
-      setExpand(0);
-      document.body.style.backgroundColor = "white";
+      setExpand(false);
     }
   };
   const handleClick = (event: any) => {
@@ -88,17 +91,17 @@ const Explore = (props: any) => {
           border: "none",
           borderRadius: "0px 0px 0px 0px",
           display: "block",
-          marginLeft:"40px",
+          marginLeft: "40px",
           width: "120px",
           "&:hover": {
             color: "black",
             backgroundColor: "white",
-            borderBottom:"3px solid #22C870",
+            borderBottom: "3px solid #22C870",
           },
         }}
         endIcon={
-          (expand === 0 && <ExpandMoreIcon data-testid="expandmore"/>) ||
-          (expand === 1 && <ExpandLessIcon data-testid="expandless"/>)
+          (!expand && <ExpandMoreIcon data-testid="expandmore" />) ||
+          (expand && <ExpandLessIcon data-testid="expandless" />)
         }
       >
         Explore
@@ -109,7 +112,7 @@ const Explore = (props: any) => {
         keepMounted
         open={Boolean(anchorEl)}
         onClose={handleClose}
-        style={{top:"9px"}}
+        style={{ top: "-4px" }}
       >
         <div className="navCategory-list-wrapper">
           <ul className="navCategory-list">
@@ -347,6 +350,15 @@ const Explore = (props: any) => {
           </ul>
         </div>
       </StyledMenu>
+      <Backdrop
+        sx={{
+          marginTop: "52px",
+          color: "#fff",
+          zIndex: (theme) => theme.zIndex.drawer + 1,
+        }}
+        open={expand}
+        onClick={handleClose}
+      ></Backdrop>
     </div>
   );
 };

@@ -100,12 +100,13 @@
       "id": 12
     },
     {
-      "id": 13,
       "title": "Being Boss",
       "author": "Kathleen Shannon",
+      "category": "blink",
       "image": "/assets/img/10.png",
+      "value": 0,
       "status": "explore",
-      "category": "blink"
+      "id": 13
     },
     {
       "id": 14,
@@ -135,13 +136,13 @@
       "value": 50
     },
     {
-      "id": 17,
       "title": "Loving Your Business",
       "author": "Debbie King",
-      "image": "/assets/img/6.png",
-      "status": "explore",
       "category": "featured",
-      "value": 0
+      "image": "/assets/img/6.png",
+      "value": 0,
+      "status": "explore",
+      "id": 17
     },
     {
       "title": "Employee to Entrepreneur",

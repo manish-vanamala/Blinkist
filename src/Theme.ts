@@ -43,6 +43,7 @@ const theme = createTheme({
         root:{
           boxShadow:"none",
           backgroundColor:"white",
+          marginBottom:"2px"
         }
       }
     },
@@ -68,7 +69,14 @@ const theme = createTheme({
         },
       },
     },
-    
+    MuiList:{
+      styleOverrides:{
+        root:{
+          paddingTop:"0px",
+          paddingBottom:"0px"
+        }
+      }
+    }
   },
 });
 
