@@ -95,7 +95,7 @@ const Enterpreneurship = () => {
       </div>
       <Container className={classes.container}>
         {!input && <Typographys variant="subtitle1" content="Trending blinks" styles={{margin:"30px 25px 25px 25px",fontSize:"24px"}}/>}
-        <Grid
+        <Grid data-testid="trendingBlinks"
             container
             rowSpacing={3}
             columnSpacing={{ xs: 1, sm: 2, md: 2 }}
@@ -103,7 +103,7 @@ const Enterpreneurship = () => {
           {cards("blink")}
         </Grid>
         {!input && <Typographys variant="subtitle1" content="Just added" styles={{margin:"25px",fontSize:"24px"}}/>}
-        <Grid
+        <Grid data-testid="justAdded"
             container
             rowSpacing={3}
             columnSpacing={{ xs: 1, sm: 2, md: 2 }}
@@ -111,7 +111,7 @@ const Enterpreneurship = () => {
           {cards("added")}
         </Grid>
         {!input && <Typographys variant="subtitle1" content="Featured audio blinks" styles={{margin:"25px",fontSize:"24px"}}/>}
-        <Grid
+        <Grid data-testid="featuredAudio"
             container
             rowSpacing={3}
             columnSpacing={{ xs: 1, sm: 2, md: 2 }}

@@ -64,12 +64,11 @@ describe("Explore component", () => {
     renderExplore();
     expect(document.body).toHaveStyle("background-color: white");
   });
-  it("should body color is changed on click the explore button", () => {
+  it("render a backdrop onclick", () => {
     renderExplore();
-    const ButtonElement = screen.getByRole("button", { name: /explore/i });
-    fireEvent.click(ButtonElement);
-    expect(document.body).toHaveStyle(
-      "background-color: rgba(157, 163, 166, 0.45)"
-    );
+    const backdropElement = screen.getByTestId("backdrop");
+    fireEvent.click(backdropElement);
+    const explore = screen.getByRole("button", { name: /explore/i });
+    expect(explore).toBeInTheDocument();
   });
 });

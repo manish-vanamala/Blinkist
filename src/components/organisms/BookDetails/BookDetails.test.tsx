@@ -44,6 +44,35 @@ describe("BookDetails", () => {
     const synopsisTab = screen.getByRole("tab",{name:/synopsis/i});
     expect(synopsisTab).toBeTruthy();
   })
+  it("should have synopsis tab value as today’s business world",()=>{
+    renderBookDetails();
+    const textElement = screen.getByText(/today’s business world/i);
+    expect(textElement).toBeTruthy();
+  })
+  it("should have who tab",()=>{
+    renderBookDetails();
+    const whoTab = screen.getByRole("tab",{name:/who/i});
+    expect(whoTab).toBeTruthy();
+  })
+  it("should have synopsis tab value as Far far away",()=>{
+    renderBookDetails();
+    const whoTab = screen.getByRole("tab",{name:/who/i});
+    fireEvent.click(whoTab);
+    const textElement = screen.getByText(/Far far away/i);
+    expect(textElement).toBeTruthy();
+  })
+  it("should have about tab",()=>{
+    renderBookDetails();
+    const aboutTab = screen.getByRole("tab",{name:/about/i});
+    expect(aboutTab).toBeTruthy();
+  })
+  it("should have synopsis tab value as Even the all-powerful",()=>{
+    renderBookDetails();
+    const aboutTab = screen.getByRole("tab",{name:/about/i});
+    fireEvent.click(aboutTab);
+    const textElement = screen.getByText(/Even the all-powerful/i);
+    expect(textElement).toBeTruthy();
+  })
   it("should display value starts with far on click who tab",()=>{
     renderBookDetails();
     const whoTab = screen.getByRole("tab",{name:/who/i});

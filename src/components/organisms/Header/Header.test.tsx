@@ -26,9 +26,16 @@ describe("Header Component", () => {
     fireEvent.click(mylibraryButton);
     expect(window.location.pathname).toBe("/");
   });
-  it("should contain avatar", () => {
+  it("should have Account details button", () => {
     renderHeader();
-    const ReactElement = screen.getByAltText(/A/i);
-    expect(ReactElement).toBeInTheDocument();
+    const Button = screen.getByRole("button", { name: /Account details/i });
+    expect(Button).toBeInTheDocument();
+  });
+  it("should have login button on click of AccountDetails button", () => {
+    renderHeader();
+    const Button = screen.getByRole("button", { name: /Account details/i });
+    fireEvent.click(Button);
+    const loginButton = screen.getByRole("button", { name: /login/i });
+    expect(loginButton).toBeInTheDocument();
   });
 });

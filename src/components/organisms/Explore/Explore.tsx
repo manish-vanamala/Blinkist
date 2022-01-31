@@ -358,6 +358,7 @@ const Explore = (props: any) => {
         }}
         open={expand}
         onClick={handleClose}
+        data-testid="backdrop"
       ></Backdrop>
     </div>
   );
