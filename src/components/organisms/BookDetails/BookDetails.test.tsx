@@ -14,6 +14,26 @@ describe("BookDetails", () => {
     const HeadingElement = screen.getByText("Beyond Entrepreneurship 2.0");
     expect(HeadingElement).toBeInTheDocument();
   });
+  it("render Turning Your Business into an Enduring Great Company", () => {
+    renderBookDetails();
+    const subtitleElement = screen.getByText("Turning Your Business into an Enduring Great Company");
+    expect(subtitleElement).toBeInTheDocument();
+  });
+  it("render By Jim Collins and Bill Lazier", () => {
+    renderBookDetails();
+    const subtitleElement = screen.getByText("By Jim Collins and Bill Lazier");
+    expect(subtitleElement).toBeInTheDocument();
+  });
+  it("render 15-minutes read", () => {
+    renderBookDetails();
+    const subtitleElement = screen.getByText("15-minutes read");
+    expect(subtitleElement).toBeInTheDocument();
+  });
+  it("render image beyond enterpreneurship", () => {
+    renderBookDetails();
+    const imgElement = screen.getByAltText("beyond enterpreneurship");
+    expect(imgElement).toBeInTheDocument();
+  });
   it("render a finished reading button", () => {
     renderBookDetails();
     const ButtonElement = screen.getByRole("button", {
