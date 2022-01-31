@@ -11,3 +11,4 @@ export default function Typographys({variant,content,styles}:TypographysProps) {
         <div data-testid="text" className={variant} style={styles}>{content}</div>
     ) 
 }
+ 
