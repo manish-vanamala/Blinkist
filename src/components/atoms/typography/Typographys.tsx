@@ -9,5 +9,5 @@ type TypographysProps = {
 export default function Typographys({variant,content,styles}:TypographysProps) {
     return (
         <div data-testid="text" className={variant} style={styles}>{content}</div>
-    )
+    ) 
 }
