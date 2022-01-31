@@ -23,7 +23,7 @@ describe("BookDetails", () => {
     renderBookDetails();
     const subtitleElement = screen.getByText("By Jim Collins and Bill Lazier");
     expect(subtitleElement).toBeInTheDocument();
-  });
+  }); 
   it("render 15-minutes read", () => {
     renderBookDetails();
     const subtitleElement = screen.getByText("15-minutes read");
